@@ -9,8 +9,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws AWTException, InterruptedException {
-        int x = 1;
-
+        int x =0;
+        System.out.println(
+                "   _____                                              _____           _       __ \n" +
+                "  / ___/____  ____ _____ ___  ____ ___  ___  _____   / ___/__________(_)___  / /_\n" +
+                "  \\__ \\/ __ \\/ __ `/ __ `__ \\/ __ `__ \\/ _ \\/ ___/   \\__ \\/ ___/ ___/ / __ \\/ __/\n" +
+                " ___/ / /_/ / /_/ / / / / / / / / / / /  __/ /      ___/ / /__/ /  / / /_/ / /_  \n" +
+                "/____/ .___/\\__,_/_/ /_/ /_/_/ /_/ /_/\\___/_/      /____/\\___/_/  /_/ .___/\\__/  \n" +
+                "    /_/                                                            /_/           \n");
         Robot robot = new Robot();
         Scanner scanner = new Scanner(System.in);
 
@@ -21,10 +27,11 @@ public class Main {
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
 
+
         System.out.println("The spamming will start in 5 seconds");
         Thread.sleep(5000);
 
-        while(x <= 100) {
+        while(x <= 200) {
 
             Thread.sleep(100);
 
